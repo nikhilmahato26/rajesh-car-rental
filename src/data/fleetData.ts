@@ -8,9 +8,14 @@ export const BUSINESS_INFO: BusinessContact = {
   location: "Raipur, Chhattisgarh, India",
   address: "Near Ashok Ratan, Vidhan Sabha Road, Raipur, Chhattisgarh",
   availability: "24 X 7",
-  primaryPhone: "+917746055014",
-  primaryPhoneDisplay: "+91 7746055014",
+  primaryPhone: "+918878999911",
+  primaryPhoneDisplay: "+91 8878999911",
+  whatsappPhone: "918878999911",
   alternatePhones: [
+    {
+      number: "+918878116464",
+      display: "+91 8878116464",
+    },
     {
       number: "+919200880800",
       display: "+91 9200880800",
@@ -107,7 +112,7 @@ export const POPULAR_ROUTES = [
 export const FAQS = [
   {
     question: "How can I book a car with Rajesh Tiwari Car Rental?",
-    answer: "You can book directly by calling our 24x7 helpline at +91 7746055014, sending a quick WhatsApp message, or submitting the booking enquiry form on this website. Our team will promptly confirm availability and details.",
+    answer: "You can book directly by calling our 24x7 helpline at +91 8878999911, sending a quick WhatsApp message, or submitting the booking enquiry form on this website. Our team will promptly confirm availability and details.",
   },
   {
     question: "What vehicles are available in your fleet?",
@@ -127,6 +132,6 @@ export const FAQS = [
   },
   {
     question: "How are rental rates determined?",
-    answer: "Rental rates depend on your vehicle selection, travel distance, trip duration, and route. Please contact our team at +91 7746055014 or via WhatsApp for immediate, transparent quotes.",
+    answer: "Rental rates depend on your vehicle selection, travel distance, trip duration, and route. Please contact our team at +91 8878999911 or via WhatsApp for immediate, transparent quotes.",
   },
 ];

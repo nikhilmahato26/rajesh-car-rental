@@ -17,6 +17,7 @@ export interface BusinessContact {
   availability: string;
   primaryPhone: string;
   primaryPhoneDisplay: string;
+  whatsappPhone: string;
   alternatePhones: {
     number: string;
     display: string;
