@@ -9,7 +9,7 @@ interface VehicleCardProps {
 }
 
 export const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onEnquire }) => {
-  const whatsappUrl = `https://wa.me/917746055014?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/${BUSINESS_INFO.whatsappPhone}?text=${encodeURIComponent(
     `Hello Rajesh Tiwari Car Rental, I would like to enquire about the ${vehicle.name} (${vehicle.category}) for rental in Raipur.`
   )}`;
 

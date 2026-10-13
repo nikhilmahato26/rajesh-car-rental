@@ -46,7 +46,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
       `Please provide the rental rate and availability details.`,
     ].filter(Boolean).join('\n');
 
-    const url = `https://wa.me/917746055014?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${BUSINESS_INFO.whatsappPhone}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
     setIsSuccess(true);
   };

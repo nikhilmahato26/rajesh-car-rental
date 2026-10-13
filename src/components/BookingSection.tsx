@@ -55,7 +55,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ initialVehicleId
     ].filter(Boolean);
 
     const fullMessage = messageLines.join('\n');
-    const waUrl = `https://wa.me/917746055014?text=${encodeURIComponent(fullMessage)}`;
+    const waUrl = `https://wa.me/${BUSINESS_INFO.whatsappPhone}?text=${encodeURIComponent(fullMessage)}`;
     window.open(waUrl, '_blank');
     setSubmitted(true);
   };

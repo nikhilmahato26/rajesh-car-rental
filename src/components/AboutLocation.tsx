@@ -61,7 +61,7 @@ export const AboutLocation: React.FC = () => {
               </a>
 
               <a
-                href={`https://wa.me/917746055014?text=${encodeURIComponent(
+                href={`https://wa.me/${BUSINESS_INFO.whatsappPhone}?text=${encodeURIComponent(
                   'Hello Rajesh Tiwari Car Rental, I have an enquiry about renting a vehicle in Raipur.'
                 )}`}
                 target="_blank"
