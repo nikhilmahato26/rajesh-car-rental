@@ -61,7 +61,7 @@ export const AboutLocation: React.FC = () => {
               </a>
 
               <a
-                href={`https://wa.me/918878999911?text=${encodeURIComponent(
+                href={`https://wa.me/917746055014?text=${encodeURIComponent(
                   'Hello Rajesh Tiwari Car Rental, I have an enquiry about renting a vehicle in Raipur.'
                 )}`}
                 target="_blank"
@@ -90,19 +90,14 @@ export const AboutLocation: React.FC = () => {
                 </a>
               </div>
 
-              <div className="poster-number-item">
-                <span className="poster-number-label">Booking Line 2 (Poster)</span>
-                <a href={`tel:${BUSINESS_INFO.alternatePhones[0].number}`} className="poster-number-link">
-                  {BUSINESS_INFO.alternatePhones[0].display}
-                </a>
-              </div>
-
-              <div className="poster-number-item">
-                <span className="poster-number-label">Booking Line 3 (Poster)</span>
-                <a href={`tel:${BUSINESS_INFO.alternatePhones[1].number}`} className="poster-number-link">
-                  {BUSINESS_INFO.alternatePhones[1].display}
-                </a>
-              </div>
+              {BUSINESS_INFO.alternatePhones.map((phone, idx) => (
+                <div className="poster-number-item" key={phone.number}>
+                  <span className="poster-number-label">Booking Line {idx + 2} (Poster)</span>
+                  <a href={`tel:${phone.number}`} className="poster-number-link">
+                    {phone.display}
+                  </a>
+                </div>
+              ))}
             </div>
 
             <div style={{ marginTop: '24px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.86rem', color: 'rgba(255, 255, 255, 0.9)' }}>

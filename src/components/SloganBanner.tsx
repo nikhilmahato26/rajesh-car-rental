@@ -26,7 +26,7 @@ export const SloganBanner: React.FC = () => {
             className="btn btn-primary btn-sm"
           >
             <Phone size={15} />
-            <span>Call +91 8878999911</span>
+            <span>Call {BUSINESS_INFO.primaryPhoneDisplay}</span>
           </a>
         </div>
       </div>

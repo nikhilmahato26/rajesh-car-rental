@@ -23,37 +23,25 @@ export const ContactBar: React.FC = () => {
             </div>
           </div>
 
-          {/* Alternate 1 */}
-          <div className="contact-item-box">
-            <div className="contact-icon-bubble">
-              <PhoneCall size={22} />
-            </div>
-            <div>
-              <div className="contact-meta-label">Alternate Booking</div>
-              <div className="contact-meta-value">
-                <a href={`tel:${BUSINESS_INFO.alternatePhones[0].number}`}>
-                  {BUSINESS_INFO.alternatePhones[0].display}
-                </a>
+          {/* Alternate Booking Phone(s) */}
+          {BUSINESS_INFO.alternatePhones.map((phone, idx) => (
+            <div className="contact-item-box" key={phone.number}>
+              <div className="contact-icon-bubble">
+                <PhoneCall size={22} />
               </div>
-              <div className="contact-meta-sub">Poster Contact Line</div>
-            </div>
-          </div>
-
-          {/* Alternate 2 */}
-          <div className="contact-item-box">
-            <div className="contact-icon-bubble">
-              <PhoneCall size={22} />
-            </div>
-            <div>
-              <div className="contact-meta-label">Alternate Booking</div>
-              <div className="contact-meta-value">
-                <a href={`tel:${BUSINESS_INFO.alternatePhones[1].number}`}>
-                  {BUSINESS_INFO.alternatePhones[1].display}
-                </a>
+              <div>
+                <div className="contact-meta-label">
+                  {BUSINESS_INFO.alternatePhones.length > 1 ? `Alternate Booking ${idx + 1}` : 'Alternate Booking'}
+                </div>
+                <div className="contact-meta-value">
+                  <a href={`tel:${phone.number}`}>
+                    {phone.display}
+                  </a>
+                </div>
+                <div className="contact-meta-sub">Poster Contact Line</div>
               </div>
-              <div className="contact-meta-sub">Booking Assistance</div>
             </div>
-          </div>
+          ))}
 
           {/* Location */}
           <div className="contact-item-box">

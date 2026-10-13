@@ -8,16 +8,12 @@ export const BUSINESS_INFO: BusinessContact = {
   location: "Raipur, Chhattisgarh, India",
   address: "Near Ashok Ratan, Vidhan Sabha Road, Raipur, Chhattisgarh",
   availability: "24 X 7",
-  primaryPhone: "+918878999911",
-  primaryPhoneDisplay: "+91 8878999911",
+  primaryPhone: "+917746055014",
+  primaryPhoneDisplay: "+91 7746055014",
   alternatePhones: [
     {
       number: "+919200880800",
       display: "+91 9200880800",
-    },
-    {
-      number: "+917746055014",
-      display: "+91 7746055014",
     },
   ],
   primaryEmail: "rajeshtiwaricarrental@gmail.com",
@@ -56,6 +52,14 @@ export const vehicles: Vehicle[] = [
     image: "/images/force-urbania.jpg",
     description: "A group transportation option for suitable travel requirements.",
     badge: "Luxury Group",
+  },
+  {
+    id: "tata-winger",
+    name: "Tata Winger 13 Seater",
+    category: "Group Travel",
+    image: "/images/tata-winger.jpg",
+    description: "Spacious 13-seater executive passenger van ideal for family outings, pilgrimages, and group excursions.",
+    badge: "13 Seater Van",
   },
   {
     id: "tempo-traveller",
@@ -103,11 +107,11 @@ export const POPULAR_ROUTES = [
 export const FAQS = [
   {
     question: "How can I book a car with Rajesh Tiwari Car Rental?",
-    answer: "You can book directly by calling our 24x7 helpline at +91 8878999911, sending a quick WhatsApp message, or submitting the booking enquiry form on this website. Our team will promptly confirm availability and details.",
+    answer: "You can book directly by calling our 24x7 helpline at +91 7746055014, sending a quick WhatsApp message, or submitting the booking enquiry form on this website. Our team will promptly confirm availability and details.",
   },
   {
     question: "What vehicles are available in your fleet?",
-    answer: "Our fleet includes the Maruti Suzuki Dzire (Sedan), Maruti Suzuki Ertiga (Family Vehicle), Toyota Innova Crysta (Premium MPV), Force Urbania (Group Travel), and Tempo Traveller (Group Travel).",
+    answer: "Our fleet includes the Maruti Suzuki Dzire (Sedan), Maruti Suzuki Ertiga (Family Vehicle), Toyota Innova Crysta (Premium MPV), Force Urbania (Group Travel), Tata Winger 13 Seater (Group Travel), and Tempo Traveller (Group Travel).",
   },
   {
     question: "Where are you located in Raipur?",
@@ -123,6 +127,6 @@ export const FAQS = [
   },
   {
     question: "How are rental rates determined?",
-    answer: "Rental rates depend on your vehicle selection, travel distance, trip duration, and route. Please contact our team at +91 8878999911 or via WhatsApp for immediate, transparent quotes.",
+    answer: "Rental rates depend on your vehicle selection, travel distance, trip duration, and route. Please contact our team at +91 7746055014 or via WhatsApp for immediate, transparent quotes.",
   },
 ];

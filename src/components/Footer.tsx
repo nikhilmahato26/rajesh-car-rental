@@ -103,16 +103,13 @@ export const Footer: React.FC = () => {
                     </a>{' '}
                     <span style={{ fontSize: '0.78rem', color: '#FFA44D' }}>(Primary)</span>
                   </div>
-                  <div>
-                    <a href={`tel:${BUSINESS_INFO.alternatePhones[0].number}`}>
-                      {BUSINESS_INFO.alternatePhones[0].display}
-                    </a>
-                  </div>
-                  <div>
-                    <a href={`tel:${BUSINESS_INFO.alternatePhones[1].number}`}>
-                      {BUSINESS_INFO.alternatePhones[1].display}
-                    </a>
-                  </div>
+                  {BUSINESS_INFO.alternatePhones.map((phone) => (
+                    <div key={phone.number}>
+                      <a href={`tel:${phone.number}`}>
+                        {phone.display}
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
 

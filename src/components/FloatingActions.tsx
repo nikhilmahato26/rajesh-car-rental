@@ -3,7 +3,7 @@ import { Phone, MessageSquare } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/fleetData';
 
 export const FloatingActions: React.FC = () => {
-  const whatsappUrl = `https://wa.me/918878999911?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/917746055014?text=${encodeURIComponent(
     'Hello Rajesh Tiwari Car Rental, I would like to book a vehicle in Raipur.'
   )}`;
 

@@ -67,7 +67,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBookingModal }) => {
           {/* Header Action Buttons */}
           <div className="header-actions">
             <a
-              href={`https://wa.me/918878999911?text=${encodeURIComponent(
+              href={`https://wa.me/917746055014?text=${encodeURIComponent(
                 'Hello Rajesh Tiwari Car Rental, I would like to enquire about vehicle rental in Raipur.'
               )}`}
               target="_blank"
@@ -158,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBookingModal }) => {
                 Call {BUSINESS_INFO.primaryPhoneDisplay}
               </a>
               <a
-                href={`https://wa.me/918878999911?text=${encodeURIComponent(
+                href={`https://wa.me/917746055014?text=${encodeURIComponent(
                   'Hello Rajesh Tiwari Car Rental, I would like to book a car in Raipur.'
                 )}`}
                 target="_blank"
